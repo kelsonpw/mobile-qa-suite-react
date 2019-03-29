@@ -3,7 +3,7 @@
 Empty project.
 
 Parcel is insanely simple compared to Webpack.
-Check out my Webpack version of this repo: [Webpack Repo](https://github.com/kelsonpw/react-webpack-boilerplate)
+Check out my Webpack version of this repo: [Webpack Repo](https://github.com/kelsonpw/react-webpack-config)
 
 ## Building and running on localhost
 
