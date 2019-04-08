@@ -2273,7 +2273,7 @@ function BaseDeviceComponent(_ref) {
       width = _ref.width;
   return _react.default.createElement("div", {
     className: "device-container"
-  }, _react.default.createElement("h3", null, device.toUppercase()), _react.default.createElement("iframe", {
+  }, _react.default.createElement("h3", null, device), _react.default.createElement("iframe", {
     src: "https://appetize.io/embed/".concat(publicKey, "?device=").concat(device, "&scale=50&autoplay=").concat(autoplay, "&orientation=portrait&deviceColor=black"),
     width: width,
     height: height,
@@ -26121,7 +26121,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54431" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51383" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
