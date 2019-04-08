@@ -28,3 +28,4 @@ npm run build-prod
 ## Running
 
 Open the file `dist/index.html` in your browser
+# appz
