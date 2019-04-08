@@ -1,37 +1,32 @@
-$primary-color: white;
-$bg: black;
 body {
-  color: $bg;
-  background-color: $primary-color;
-}
+  color: black;
+  background-color: white; }
+
 .form {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 .devices {
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 .phones {
-  display: flex;
-}
+  display: flex; }
 
 iframe {
-  padding: 25px;
-}
+  padding: 25px; }
 
 .form-field {
-  padding: 10px;
-}
+  padding: 10px; }
 
 .device-container {
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; }
+
+
+/*# sourceMappingURL=/src.a2b27638.css.map */

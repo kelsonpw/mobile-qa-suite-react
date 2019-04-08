@@ -1,12 +1,7 @@
 import React from "react";
+import App from './App';
 import { render } from "react-dom";
 import "./styles.scss";
-
-function App() {
-  return (
-    <div>Hello there. Such simple app.</div>
-  )
-}
 
 render(<App />, document.getElementById("app"));
 "::"
