@@ -2253,7 +2253,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.development.js":"node_modules/react/cjs/react.development.js"}],"src/components/IPhone8.js":[function(require,module,exports) {
+},{"./cjs/react.development.js":"node_modules/react/cjs/react.development.js"}],"src/components/BaseDeviceComponent.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2262,26 +2262,57 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function BaseDeviceComponent(_ref) {
+  var autoplay = _ref.autoplay,
+      device = _ref.device,
+      height = _ref.height,
+      publicKey = _ref.publicKey,
+      width = _ref.width;
+  return _react.default.createElement("div", {
+    className: "device-container"
+  }, _react.default.createElement("h3", null, device.toUppercase()), _react.default.createElement("iframe", {
+    src: "https://appetize.io/embed/".concat(publicKey, "?device=").concat(device, "&scale=50&autoplay=").concat(autoplay, "&orientation=portrait&deviceColor=black"),
+    width: width,
+    height: height,
+    frameBorder: "0",
+    scrolling: "no"
+  }));
+}
+
+var _default = BaseDeviceComponent;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"src/components/IPhone8.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _BaseDeviceComponent = _interopRequireDefault(require("./BaseDeviceComponent"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function IPhone8(_ref) {
   var autoplay = _ref.autoplay,
       publicKey = _ref.publicKey;
-  return _react.default.createElement("div", {
-    className: "device-container"
-  }, _react.default.createElement("h3", null, "IPhone 8"), _react.default.createElement("iframe", {
-    src: "https://appetize.io/embed/".concat(publicKey, "?device=iphone8&scale=50&autoplay=").concat(autoplay, "&orientation=portrait&deviceColor=black"),
-    width: "208px",
-    height: "435px",
-    frameBorder: "0",
-    scrolling: "no"
-  }));
+  return _react.default.createElement(_BaseDeviceComponent.default, {
+    autoplay: autoplay,
+    publicKey: publicKey,
+    width: '208px',
+    height: '435px',
+    device: 'iphone8'
+  });
 }
 
 var _default = IPhone8;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"src/components/IPhone10.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./BaseDeviceComponent":"src/components/BaseDeviceComponent.js"}],"src/components/IPhone10.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2290,26 +2321,26 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
+
+var _BaseDeviceComponent = _interopRequireDefault(require("./BaseDeviceComponent"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function IPhone10(_ref) {
   var autoplay = _ref.autoplay,
       publicKey = _ref.publicKey;
-  return _react.default.createElement("div", {
-    className: "device-container"
-  }, _react.default.createElement("h3", null, "IPhone X"), _react.default.createElement("iframe", {
-    src: "https://appetize.io/embed/".concat(publicKey, "?device=iphonex&scale=50&autoplay=").concat(autoplay, "&orientation=portrait&deviceColor=black"),
-    width: "205px",
-    height: "423px",
-    frameBorder: "0",
-    scrolling: "no"
-  }));
+  return _react.default.createElement(_BaseDeviceComponent.default, {
+    autoplay: autoplay,
+    publicKey: publicKey,
+    width: '205px',
+    height: '423px',
+    device: 'iphonex'
+  });
 }
 
 var _default = IPhone10;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"src/components/Nexus5.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./BaseDeviceComponent":"src/components/BaseDeviceComponent.js"}],"src/components/Nexus5.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2318,26 +2349,26 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
+
+var _BaseDeviceComponent = _interopRequireDefault(require("./BaseDeviceComponent"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Nexus5(_ref) {
   var autoplay = _ref.autoplay,
       publicKey = _ref.publicKey;
-  return _react.default.createElement("div", {
-    className: "device-container"
-  }, _react.default.createElement("h3", null, "Nexus 5"), _react.default.createElement("iframe", {
-    src: "https://appetize.io/embed/".concat(publicKey, "?device=nexus5&scale=50&autoplay=").concat(autoplay, "&orientation=portrait&deviceColor=black"),
-    width: "200px",
-    height: "398px",
-    frameBorder: "0",
-    scrolling: "no"
-  }));
+  return _react.default.createElement(_BaseDeviceComponent.default, {
+    autoplay: autoplay,
+    publicKey: publicKey,
+    width: '200px',
+    height: '398px',
+    device: 'nexus5'
+  });
 }
 
 var _default = Nexus5;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"src/components/Nexus9.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./BaseDeviceComponent":"src/components/BaseDeviceComponent.js"}],"src/components/Nexus9.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2347,25 +2378,25 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _BaseDeviceComponent = _interopRequireDefault(require("./BaseDeviceComponent"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Nexus9(_ref) {
   var autoplay = _ref.autoplay,
       publicKey = _ref.publicKey;
-  return _react.default.createElement("div", {
-    className: "device-container"
-  }, _react.default.createElement("h3", null, "Nexus 9"), _react.default.createElement("iframe", {
-    src: "https://appetize.io/embed/".concat(publicKey, "?device=nexus9&scale=50&autoplay=").concat(autoplay, "&orientation=portrait&deviceColor=black"),
-    width: "433px",
-    height: "644px",
-    frameBorder: "0",
-    scrolling: "no"
-  }));
+  return _react.default.createElement(_BaseDeviceComponent.default, {
+    autoplay: autoplay,
+    publicKey: publicKey,
+    width: '433px',
+    height: '644px',
+    device: 'nexus9'
+  });
 }
 
 var _default = Nexus9;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"src/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./BaseDeviceComponent":"src/components/BaseDeviceComponent.js"}],"src/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
