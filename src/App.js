@@ -27,7 +27,7 @@ function App() {
           IOS Public Key
           <input
             name="iosPublicKey"
-            type="text"
+            type="password"
             value={iosPublicKey}
             onChange={evt => setIosPublicKey(evt.target.value)}
             placeholder="Enter IOS public key"
@@ -37,7 +37,7 @@ function App() {
           Android Public Key:
           <input
             name="androidPublicKey"
-            type="text"
+            type="password"
             value={androidPublicKey}
             onChange={evt => setAndroidPublicKey(evt.target.value)}
             placeholder="Enter Android public key"
